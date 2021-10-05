@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 h2 {
   color: rgba(58, 12, 163, 1);
+  line-height: 3px;
 }
 body {
   color: rgb(36, 33, 33);
@@ -11,5 +12,8 @@ h1 {
   font-family: 'Birthstone',cursive, serif;
   font-size: 3em;
   font-weight: 570;
+  line-height: 1;
+}
+li {
   line-height: 1;
 }
