@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
-.subtitles {
+.habilidades{
   color: rgba(58, 12, 163, 1);
   line-height: 3px;
 }
-.paragrafo {
+.text-profile{
   color: rgb(36, 33, 33);
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
   text-decoration: none;
+}
+.image-profile{
+
 }
 .title {
   font-family: 'Birthstone',cursive, serif;
@@ -15,9 +18,22 @@
   font-weight: 570;
   line-height: 1;
 }
-.list {
+.habilidades li {
   line-height: 1;
+}
+.hab-principal {
+
+}
+.hab-outras {
+  
 }
 body {
   background-color: rgba(67, 98, 238, 0.40);
+}
+
+.top {
+
+}
+.menu {
+
 }
