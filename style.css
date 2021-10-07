@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
-.habilidades{
-  color: rgba(58, 12, 163, 1);
-  line-height: 3px;
-}
+
 .text-profile{
   color: rgb(36, 33, 33);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: fantasy, serif;
   font-size: 17px;
   text-decoration: none;
+  background-color: rgba(57, 12, 163, 0.562);
+}
+.text-profile a {
+  color: green;
+  text-decoration: none;
+}
+
+a:hover {
+  color: whitesmoke;
+  background-color: rgb(55, 61, 61);
+  border-radius: 18px;
 }
 .image-profile{
-
+border-radius: 20px;
+border: 5px solid rgb(58, 12, 163);
 }
 .title {
   font-family: 'Birthstone',cursive, serif;
@@ -18,22 +27,25 @@
   font-weight: 570;
   line-height: 1;
 }
+.habilidades {
+  color: rgba(58, 12, 163, 1);
+  line-height: 3px;
+}
 .habilidades li {
   line-height: 1;
-}
-.hab-principal {
-
+  color:rgb(36, 33, 33)
 }
 .hab-outras {
-  
+left: 100px;
+background-color: rosybrown;
 }
 body {
   background-color: rgba(67, 98, 238, 0.40);
 }
 
 .top {
-
+background-color: salmon;
 }
 .menu {
-
+background-color: silver;
 }
