@@ -6,6 +6,8 @@
   font-size: 17px;
   text-decoration: none;
   background-color: rgba(57, 12, 163, 0.562);
+  width: 300px;
+  margin-block-start: 0 0 0 250px;
 }
 .text-profile a {
   color: green;
@@ -17,9 +19,11 @@ a:hover {
   background-color: rgb(55, 61, 61);
   border-radius: 18px;
 }
-.image-profile{
+.image-profile {
 border-radius: 20px;
 border: 5px solid rgb(58, 12, 163);
+background-color: deeppink;
+display: inline;
 }
 .title {
   font-family: 'Birthstone',cursive, serif;
