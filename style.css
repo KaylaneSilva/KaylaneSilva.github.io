@@ -5,6 +5,7 @@
 
 body {
   background-image: url('./fundo-estrelado.jpg');
+  background-size: contain;
   font-size: 15px;
   color: white;
   height: 100em;
