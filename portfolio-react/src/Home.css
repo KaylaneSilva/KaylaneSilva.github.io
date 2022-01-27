@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-all {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and ( min-width : 320px) {
+
+  .div-profile {
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    margin-top: 3%;
+    padding: 1vh 3vw;
+    width: 70%;
+  }
+  
+  .description-text {
+    font-family: Heebo, sans-serif;
+    padding: 0 1vw;
+    width: 50%;
+  }
+  
+  .description-text h3 {
+    font-size: 2vw;
+    font-weight: 600;
+  }
+
+  .about-me {
+    line-height: 3.6vh;
+    margin: 3vh 0;
+  }  
+  
+  .image-profile {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(83, 83, 83, 0.432);
+    width: 15vw;
+  }
+
+  .div-skills {
+    background-color: #EDF7FA;
+    height: 50vh;
+    width: 70%;
+  }
+
+}
