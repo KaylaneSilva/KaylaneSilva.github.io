@@ -1,7 +1,7 @@
 import '../css/Home.css'
 import Header from './Header'
 import Footer from './Footer'
-import { Link, Button, Box } from '@mui/material'
+import { Link, Box } from '@mui/material'
 import { Image } from 'mui-image'
 
 export default function Teste() {
@@ -11,11 +11,11 @@ export default function Teste() {
       <main>
         <div className='divProfile'>
           <div className='div-image'>
-            <Image
+            <img
               src='https://cdn.discordapp.com/attachments/935207613543624835/938216634542354462/minha-foto.jpg'
               alt="Foto de perfil - Kaylane"
-              width={150}
-              style={{ borderRadius: 100 }}
+              className="img-profile"
+              fadein
             />
           </div>
           <section className='descriptionText'>
@@ -50,7 +50,19 @@ export default function Teste() {
         </div>
         <div className='divSkills'>
           Habilidades
-          <section>
+          <section className='contentSkill'>
+            <section className='divListSkills'>
+              <p className='titleSkills'> Hard Skills</p>
+              <ul className='listSkills'>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>Git</li>
+                <li>Metodologia Ágil</li>
+              </ul>
+            </section>
             <section className='divListSkills'>
               <p className='titleSkills'> Hard Skills</p>
               <ul className='listSkills'>
@@ -65,16 +77,11 @@ export default function Teste() {
             </section>
           </section>
         </div>
-        <div className='divProjects'>
+        <div className='divProjects' id='projects'>
           <Box
             component="div"
             fullwidth
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: "center",
-              paddingTop: 4,
-            }}
+            className='project'
           >
             <Image
               src='https://cdn.discordapp.com/attachments/935207613543624835/937783973541728326/Captura_de_tela_de_2022-01-31_15-56-55.png'
@@ -87,36 +94,18 @@ export default function Teste() {
             />
             <Box
               component="div"
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'start',
-                width: '91vw',
-                paddingBottom: '7vh',
-              }}
+              className='div-content-project'
             >
               <Box
                 component='h3'
-                style={{ fontSize: '7vh', fontWeight: 700 }}
+                style={{ fontSize: '230%', fontWeight: 700 }}
               >AluraCord - Ocean</Box>
-              <Button
+              <button
                 type='button'
-                style={{
-                  width: '15vw',
-                  height: '5vh',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  fontSize: '3.5vh',
-                  alignItems: "center",
-                  color: 'white',
-                  fontWeight: 800,
-                  backgroundColor: 'blue',
-                  borderRadius: 70,
-                  marginBottom: '5vh'
-                }}
+                className='button-project'
               >
                 2022
-              </Button>
+              </button>
               <Box
                 component='p'
                 style={{
@@ -143,7 +132,7 @@ export default function Teste() {
                     color: 'black',
                     fontWeight: 600
                   }}
-                > {'         '} Github</Link> <br />
+                > {' '} Github</Link> <br />
                 Acesse o site: <Link
                   href=''
                   style={{
@@ -151,7 +140,7 @@ export default function Teste() {
                     color: 'black',
                     fontWeight: 600
                   }}
-                > {'         '} Clique Aqui</Link>
+                > {' '} Clique Aqui</Link>
               </Box>
             </Box>
           </Box>
@@ -165,55 +154,27 @@ export default function Teste() {
           <Box
             component="div"
             fullwidth
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: "center",
-              paddingTop: 4,
-              paddingBottom: 2
-            }}
+            className='project'
           >
             <Image
               src='https://cdn.discordapp.com/attachments/935207613543624835/941470242922704897/Captura_de_tela_de_2022-02-10_17-15-08.png'
               alt="Foto de perfil - Kaylane"
-              width={380}
-              style={{
-                borderRadius: 10,
-                marginTop: '2vh',
-              }}
+              width={380} 
             />
             <Box
               component="div"
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'start',
-                width: '91vw',
-                paddingBottom: '3vh',
-              }}
+              className='div-content-project'
             >
               <Box
                 component='h3'
-                style={{ fontSize: '7vh', fontWeight: 700 }}
+                style={{ fontSize: '230%', fontWeight: 700 }}
               >My Wallet</Box>
-              <Button
+              <button
                 type='button'
-                style={{
-                  width: '15vw',
-                  height: '5vh',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  fontSize: '3.5vh',
-                  alignItems: "center",
-                  color: 'white',
-                  fontWeight: 800,
-                  backgroundColor: 'blue',
-                  borderRadius: 70,
-                  marginBottom: '5vh'
-                }}
+                className='button-project'
               >
                 2022
-              </Button>
+              </button>
               <Box
                 component='p'
                 style={{

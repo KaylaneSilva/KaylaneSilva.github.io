@@ -17,10 +17,10 @@ export default function Header () {
               Home
             </Link>
             <Link 
-              href='/'
+              href='#projects'
               style={ {
                 color: 'black',
-                textDecorationColor: 'black'  
+                textDecorationColor: 'black',
               } }
             >
                 Projetos

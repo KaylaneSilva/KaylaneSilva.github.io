@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
 }
+
 .container {
   height: fit-content;
   width: 100%;
@@ -10,12 +13,14 @@
 }
 
 .Header {
+  background-color: white;
   align-items: center;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   margin: 0 auto;
+  padding-bottom: 2vw;
   height: 10vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -40,6 +45,18 @@
   flex-direction: column;
   align-items: center;
   padding-top: 10vh;
+}
+
+.img-profile {
+  width: 50vw;
+  border-radius: 30vh;
+  margin-top: 2vh;
+  filter: sepia(52%) brightness(107%) hue-rotate(171deg) saturate(53%) opacity(100%) contrast(66%);
+}
+
+.img-profile:hover {
+  filter: none;
+  transition-delay: 1.3s;
 }
 
 .descriptionText {
@@ -81,6 +98,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-color: white;
   padding: 5vh;
 }
 
@@ -88,7 +106,7 @@
   margin: 4vh 2vw 0;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: rgba(237, 247, 250, 1);
   width: 90vw;
   padding: 3vh 10vw;
   font-size: 4vw;
@@ -114,6 +132,38 @@
   align-items: center;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4vh;
+}
+
+.div-content-project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 4vh,;
+  padding-bottom: 7vh;
+  width: 91vw;
+}
+
+.button-project {
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.5vh;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  background-color: blue;
+  border-radius: 4vw;
+  margin-bottom: 5vh;
+}
+
 /* Footer */
 
 .Footer {
@@ -137,4 +187,104 @@
   font-size: 2.5vw;
   color: rgba(65, 67, 70, 0.918);
   margin-top: 0.1vh;
+}
+
+
+@media screen and ( min-width: 580px) {
+
+  .container {
+    width: 100vw;
+  }
+  
+  .Header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .Header div {
+    font-size: 1.2vw;
+    margin: 1.2vw 0 0;
+  }
+  
+  .divProfile {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  .descriptionText {
+    font-size: 1vw;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 0 10vh;
+  }
+  
+  .descriptionText h3 {
+    width: 50%;
+    font-size: 1.6rem;
+  }
+
+  .img-profile {
+    width: 20vw;
+    margin: -8vh 0 0 -35vw ;
+  }
+  
+  .aboutMe {
+    width: 43%;
+    font-size: 2.5vh;
+    text-align: center;
+    line-height: 4.5vh;
+  }
+  
+  /* Segunda parte */
+
+  .contentSkill {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .divListSkills {
+    width: 45vw;
+  }
+  
+  .listSkills li{
+    font-size: 0.8rem;
+  }
+
+  /* Quarta Parte */
+
+  .project {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 4vh;
+  }
+
+  .div-content-project {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 51vw;
+    padding-bottom: 7vh;
+  }
+  
+  .button-project {
+    width: 7vw;
+    height: 4vh;
+    justify-content: center;
+    font-size: 3.2vh;
+    border-radius: 1vw;
+    margin-bottom: 2vh;
+  }
+  /* Footer */
+  
+  .divIcons {
+    width: 30%;
+  }
+  
+  .Footer p {
+    font-size: 1vw;
+  }
+
 }
