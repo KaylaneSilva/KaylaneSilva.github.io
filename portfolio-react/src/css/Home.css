@@ -3,51 +3,138 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.content-all {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+.container {
+  height: fit-content;
+  width: 100%;
+  background-color: rgba(237, 247, 250, 1);
 }
 
-@media screen and ( min-width : 320px) {
+.Header {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: 0 auto;
+  height: 10vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-  .div-profile {
-    align-items: center;
-    display: flex;
-    height: fit-content;
-    justify-content: space-between;
-    margin-top: 3%;
-    padding: 1vh 3vw;
-    width: 70%;
-  }
-  
-  .description-text {
-    font-family: Heebo, sans-serif;
-    padding: 0 1vw;
-    width: 50%;
-  }
-  
-  .description-text h3 {
-    font-size: 2vw;
-    font-weight: 600;
-  }
+.Header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 
-  .about-me {
-    line-height: 3.6vh;
-    margin: 3vh 0;
-  }  
-  
-  .image-profile {
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(83, 83, 83, 0.432);
-    width: 15vw;
-  }
+.Header div {
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3.3vw;
+  font-weight: 500;
+  margin: 3vw 0 0;
+}
 
-  .div-skills {
-    background-color: #EDF7FA;
-    height: 50vh;
-    width: 70%;
-  }
+.divProfile {
+  background-color: rgba(237, 247, 250, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+}
 
+.descriptionText {
+  font-size: 4.4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  padding: 0 4vw 10vh;
+}
+
+.descriptionText h3 {
+  width: 70%;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.aboutMe {
+  width: 85%;
+  font-size: 3vh;
+  margin: 0 0 7vh;
+  text-align: center;
+  line-height: 5vh;
+}
+
+.aboutMe p {
+  font-weight: 400;
+}
+
+.aboutMe a {
+  font-weight: 550;
+}
+
+/* Segunda parte */
+
+.divSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5vh;
+}
+
+.divListSkills {
+  margin: 4vh 2vw 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90vw;
+  padding: 3vh 10vw;
+  font-size: 4vw;
+}
+
+.titleSkills {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.listSkills li{
+  list-style: none;
+  font-size: 0.9rem;
+  line-height: 4vh;
+}
+
+/* Quarta Parte */
+.divProjects {
+  width: 100%;
+  background-color: rgba(237, 247, 250, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer */
+
+.Footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1vh;
+  background-color: white;
+}
+
+.divIcons {
+  margin-top: 1vh;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Footer p {
+  font-size: 2.5vw;
+  color: rgba(65, 67, 70, 0.918);
+  margin-top: 0.1vh;
 }
