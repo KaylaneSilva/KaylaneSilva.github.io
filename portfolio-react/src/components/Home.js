@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { Link, Box } from '@mui/material'
 import { Image } from 'mui-image'
+import Contat from '../components/Contat'
 
 export default function Teste() {
   return (
@@ -39,40 +40,88 @@ export default function Teste() {
               </p>
             </section>
             <div>
-              <button
-                type='button'
-                className="waves-effect waves-light btn-small"
+              <a
+                href="https://drive.google.com/file/d/1v-BL8YADR0YpxxVUvmhZ2ifkz1-BfG02/view?usp=sharing"
+                download="Currículo.pdf"
+                target='_blank'
+                rel='noreferrer'
               >
-                Download Resumo!
-              </button>
+                <button
+                  type='button'
+                  className="waves-effect waves-light btn-small"
+                >
+                  Download Resumo!
+                </button>
+              </a>
             </div>
           </section>
         </div>
         <div className='divSkills'>
-          Habilidades
+          <section className='habilidades'>
+            <h6>Habilidades</h6>
+          </section>
           <section className='contentSkill'>
             <section className='divListSkills'>
               <p className='titleSkills'> Hard Skills</p>
               <ul className='listSkills'>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Javascript</li>
-                <li>React.js</li>
-                <li>Next.js</li>
-                <li>Git</li>
-                <li>Metodologia Ágil</li>
+                <li>
+                  <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt='Icone Html' />
+                  Html
+                </li>
+                <li>
+                  <img src="https://img.icons8.com/color/48/000000/css3.png" alt='Icone Css'/>
+                  Css
+                </li>
+                <li>
+                  <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt='Icone JS' />
+                  Javascript
+                </li>
+                <li>
+                  <img 
+                    src="https://img.icons8.com/color/48/000000/react-native.png"
+                    alt='Icone React.js'
+                  />
+                  React.js
+                </li>
+                <li>
+                  <img
+                    src='https://cdn.discordapp.com/attachments/935207613543624835/942505940396179476/nextjs_icon_132160.png'
+                    alt='Icone Next.js'
+                    width={ 40 }
+                  /> 
+                  Next.js
+                </li>
+                <li>
+                <img src="https://img.icons8.com/color/48/000000/git.png" alt='Icone Git'/>
+                  Git
+                </li>
+                <li style={ { fontWeigth: 700 } } >
+                  Metodologia Ágil
+                </li>
               </ul>
             </section>
             <section className='divListSkills'>
-              <p className='titleSkills'> Hard Skills</p>
-              <ul className='listSkills'>
-                <li>Html</li>
-                <li>Css</li>
-                <li>Javascript</li>
-                <li>React.js</li>
-                <li>Next.js</li>
-                <li>Git</li>
-                <li>Metodologia Ágil</li>
+              <p className='titleSkills'>Others Skills</p>
+              <ul className='listSkills other-skills'>
+                <li>
+                  <img src="https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png" alt='Icone Photoshop'/>
+                  Photoshop
+                </li>
+                <li>
+                <img src="https://img.icons8.com/color/48/000000/adobe-premiere-pro--v1.png" alt='Icone Premiere'/>
+                  Adobe Premiere
+                </li>
+                <li>
+                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator--v1.png" alt='Icone Illustrator'/>
+                  Adobe Illustrator
+                </li>
+                <li>
+                  <img
+                    src='https://cdn.discordapp.com/attachments/935207613543624835/942505685118242846/iconeCorelDrwa.png'
+                    alt='Icone CorelDraw'
+                  />
+                  Corel Draw
+                </li>
               </ul>
             </section>
           </section>
@@ -85,8 +134,8 @@ export default function Teste() {
           >
             <Image
               src='https://cdn.discordapp.com/attachments/935207613543624835/937783973541728326/Captura_de_tela_de_2022-01-31_15-56-55.png'
-              alt="Foto de perfil - Kaylane"
-              width={380}
+              alt="Página de início da AluraCord"
+              width={ 300 }
               style={{
                 borderRadius: 10,
                 marginTop: '2vh',
@@ -145,11 +194,11 @@ export default function Teste() {
             </Box>
           </Box>
           <Box
-            sx={ {
+            sx={{
               backgroundColor: 'black'
             }}
-            width= '90vw'
-            height={ 2 }
+            width='90vw'
+            height={2}
           />
           <Box
             component="div"
@@ -158,8 +207,8 @@ export default function Teste() {
           >
             <Image
               src='https://cdn.discordapp.com/attachments/935207613543624835/941470242922704897/Captura_de_tela_de_2022-02-10_17-15-08.png'
-              alt="Foto de perfil - Kaylane"
-              width={380} 
+              alt="Página da carteira do MyWallet"
+              width={ 300 }
             />
             <Box
               component="div"
@@ -214,6 +263,7 @@ export default function Teste() {
             </Box>
           </Box>
         </div>
+        <Contat />
         <Footer />
       </main>
     </div>
